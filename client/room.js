@@ -2,7 +2,7 @@ import { io } from "socket.io-client";
 import DrawableCanvas from "./DrawableCanvas";
 
 const production = process.env.NODE_ENV === "production";
-const serverURL = production ? "realsite.com" : "http://localhost:3000";
+const serverURL = production ? "https://pictionary-clone.herokuapp.com/" : "http://localhost:3000";
 
 const urlParams = new URLSearchParams(window.location.search);
 const name = urlParams.get("name");
